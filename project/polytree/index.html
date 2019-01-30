@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Low Poly Tree Generator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  	<div id="world"/>
+
+    <div id="title">您已推荐<span id="number"></span>人</div>
+
+    <button>领取推荐奖励</button>
+
+<div id="credits">
+  <p>powerby <a href="#"  target="blank">契合科技</a></p>
+</div>
+  <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/264161/Math2.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/stats.js/r14/Stats.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r73/three.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/264161/GeometryHelpers.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/264161/scene_colors.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/264161/OrbitControls.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/264161/CustomMeshFlat.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/264161/dat.gui.min.js'></script>
+
+
+    <script>
+        var args = {
+            number: 12,
+        };
+        document.getElementById("number").innerHTML=args.number;
+    </script>
+    <script  src="js/index.js"></script>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+
+#world{
+	position: absolute;
+	width:100%;
+	height: 100%;
+	background: #cefaeb;
+    overflow:hidden;
+}
+
+#title{
+    position:absolute;
+    width:100%;
+    margin: auto;
+    top: 1.5em;
+    margin-bottom: 1.5em;
+    color:#389579;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align : center;
+    line-height:1.5;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+#number{
+    color:#f0715e;
+    margin: 0 .2em;
+}
+
+#credits{
+    position:absolute;
+    width:100%;
+    margin: auto;
+    bottom:0;
+    margin-bottom:20px;
+    color:#f7e1be;;
+    font-size:0.7em;
+    text-transform: uppercase;
+    text-align : center;
+    line-height:1.5;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+#credits a {
+    color:#f7e1be;;
+}
+
+#credits a:hover {
+    color:#fb5d24;
+}
+
+#stats {
+    display: none;
+}
+
+button {
+    margin-left: 50%;
+    transform: translate(-50%);
+    position:absolute;
+    bottom: 3em;
+    color:white;
+    background: #db6b5a;
+    outline: none;
+    border: 2px white solid;
+    text-align : center;
+    line-height:1.6;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+
