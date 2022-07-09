@@ -62,14 +62,41 @@
       var date = new Date();
       var year = date.getFullYear();
       var month = date.getMonth() + 1;
+      if (month < 10) {
+        month = '0' + month;
+      }
       var day = date.getDate();
+      if (day < 10) {
+        day = '0' + day;
+      }
       var hour = date.getHours();
+      if (hour < 10) {
+        hour = '0' + hour;
+      }
       var minute = date.getMinutes();
+      if (minute < 10) {
+        minute = '0' + minute;
+      }
       var second = date.getSeconds();
+      if (second < 10) {
+        second = '0' + second;
+      }
+      
+      var yesterdayDate = new Date(year, month, day - 1);
+      var yesterdayYear = yesterdayDate.getFullYear();
+      var yesterdayMonth = yesterdayDate.getMonth();
+      if (yesterdayMonth < 10) {
+        yesterdayMonth = '0' + yesterdayMonth;
+      }
+      var yesterdayDay = yesterdayDate.getDate();
+      if (yesterdayDay < 10) {
+        yesterdayDay = '0' + yesterdayDay;
+      }
+      
+      
       time.innerHTML = year + '-' + month + '-' + day + ' ' + hour + ':' + minute + ':' + second;
-      record.innerHTML = year + '-' + month + '-' + (day - 1) + ' ' + 22 + ':' + 16 + ':' + 20;
+      record.innerHTML = yesterdayYear + '-' + yesterdayMonth + '-' + yesterdayDay + ' ' + 22 + ':' + 16 + ':' + 20;
     }, 1000);
-
     console.log(window.innerWidth);
     console.log(window.innerHeight);
   </script>
